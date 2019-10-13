@@ -229,6 +229,7 @@ button:-moz-focusring,
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
+
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
@@ -8336,6 +8337,88 @@ video {
 
 .z-auto {
   z-index: auto;
+}
+
+.bg-g-green-blue{
+  background-image: linear-gradient(to right, #338b85 0%, rgba(35, 164, 125, 0.73) 100%);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16)
+}
+
+.text-green-oc{
+  color: #338B85
+}
+
+.border-green-oc{
+  border-color: #338B85
+}
+
+.bg-green-oc{
+  background-color: #338B85
+}
+
+.bg-green-oc1{
+  background-color: rgb(40, 99, 95)
+}
+
+.hover\:bg-g-green-blue:hover{
+  background-image: linear-gradient(to right, #338b85 0%, rgba(35, 164, 125, 0.73) 100%);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16)
+}
+
+.hover\:text-green-oc:hover{
+  color: #338B85
+}
+
+.hover\:border-green-oc:hover{
+  border-color: #338B85
+}
+
+.hover\:bg-green-oc:hover{
+  background-color: #338B85
+}
+
+.hover\:bg-green-oc1:hover{
+  background-color: rgb(40, 99, 95)
+}
+
+.focus\:bg-g-green-blue:focus{
+  background-image: linear-gradient(to right, #338b85 0%, rgba(35, 164, 125, 0.73) 100%);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16)
+}
+
+.focus\:text-green-oc:focus{
+  color: #338B85
+}
+
+.focus\:border-green-oc:focus{
+  border-color: #338B85
+}
+
+.focus\:bg-green-oc:focus{
+  background-color: #338B85
+}
+
+.focus\:bg-green-oc1:focus{
+  background-color: rgb(40, 99, 95)
+}
+
+input[type="radio"] + label span {
+  transition: background .2s,
+    transform .2s;
+}
+
+input[type="radio"] + label span:hover,
+input[type="radio"] + label:hover span{
+  transform: scale(1.2);
+}
+
+input[type="radio"]:checked + label span {
+  background-color: #338B85;
+  box-shadow: 0px 0px 0px 2px white inset;
+}
+
+input[type="radio"]:checked + label{
+  color: #338B85;
 }
 
 @media (min-width: 640px) {
@@ -39262,21 +39345,22 @@ video {
   }
 }
 
-/* CSS BARU */
-
-.bg-g-green-blue{
-  background-image: linear-gradient(to right, #338b85 0%, rgba(35, 164, 125, 0.73) 100%);
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16)
+[type="date"] {
+  background: url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 100%;
 }
 
-.bg-green-oc{
-  color: #338B85
+/* custom styles */
 }
-
-.icon{
-  height: 50px;
-  width: 100px;
+.inputdate {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+  width: 190px;
 }
-
-.text-shadow{
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);

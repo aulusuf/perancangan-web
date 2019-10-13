@@ -115,8 +115,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\project\pweb\resources\js\min.js */"./resources/js/min.js");
-module.exports = __webpack_require__(/*! C:\project\pweb\resources\css\min.css */"./resources/css/min.css");
+__webpack_require__(/*! C:\project\perancangan-web\pweb\resources\js\min.js */"./resources/js/min.js");
+module.exports = __webpack_require__(/*! C:\project\perancangan-web\pweb\resources\css\min.css */"./resources/css/min.css");
 
 
 /***/ })
