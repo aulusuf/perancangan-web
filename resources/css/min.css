@@ -2,6 +2,22 @@
 
 @tailwind components;
 
+/* index */
+.services-section{
+  @apply text-center flex-1 mx-auto mb-20;
+}
+.services-section>p{
+  @apply my-6 mt-16 text-green-oc text-4xl;
+}
+.services{
+  @apply flex font-semibold;
+}
+.service-img{
+  @apply flex justify-center mx-auto h-64 w-56 my-6;
+}
+.service-capt{
+  @apply px-20 text-green-oc;
+}
 
 
 @tailwind utilities;
