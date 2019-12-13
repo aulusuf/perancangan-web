@@ -610,6 +610,44 @@ video {
   }
 }
 
+/* ADMIN */
+
+.main {
+  display: flex;
+  padding-top: 3rem;
+}
+
+.sidebar {
+  width: 12rem;
+  height: 100vh;
+  background-color: #fff;
+  padding-top: 4rem;
+  position: fixed;
+}
+
+.menu li a:hover{
+  background-color: #48bb78;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #fff;
+}
+
+.menu li a{
+  display: flex;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #000;
+}
+
+.menu li a.active{
+  color: #fff;
+}
+
+.active {
+  background-color: #48bb78;
+  color: #fff;
+}
+
 /* index */
 
 .services-section{
@@ -8377,6 +8415,9 @@ video {
 
 .z-auto {
   z-index: auto;
+}
+
+.bg-gray-580{
 }
 
 .bg-g-green-blue{
