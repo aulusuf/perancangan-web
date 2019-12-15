@@ -2,6 +2,26 @@
 
 @tailwind components;
 
+/* ADMIN */
+.main {
+  @apply flex pt-12;
+}
+.sidebar {
+  @apply w-48 h-screen bg-white pt-16 fixed;
+}
+.menu li a:hover{
+  @apply bg-green-500 py-3 text-white;
+}
+.menu li a{
+  @apply flex py-3 text-black;
+}
+.menu li a.active{
+  @apply text-white;
+}
+.active {
+  @apply bg-green-500 text-white;
+}
+
 /* index */
 .services-section{
   @apply text-center flex-1 mx-auto mb-20;
@@ -21,6 +41,10 @@
 
 
 @tailwind utilities;
+
+.bg-gray-580{
+  background-color: rgba(160, 174, 192, 0.8);
+}
 
 @variants hover, focus{
 .bg-g-green-blue{
@@ -44,6 +68,7 @@
     background-color: rgb(40, 99, 95)
   }
 }
+
 
 
 input[type="radio"] + label span {

@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coba HTML</title>
+    <link rel="stylesheet" href="../css/min.css">
+</head>
+<body class="bg-gray-100">
+    <div>
+        <button class="bg-green-400 px-3 py-2 rounded-lg" id="toggle-modal">Open Modal</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal hidden fixed top-0 left-0 right-0 w-screen h-screen flex items-center justify-center" id="modal">
+        <div class="modal-overlay fixed h-screen w-screen fixed bg-gray-500 opacity-50" id="modal_overlay"></div>
+        <div class="modal-container absolute bg-white shadow-lg rounded-lg p-3 w-2/3 md:max-w-lg">
+            <div
+                class="modal-header pointer-events-none modal-header text-center text-gray-500 pb-4 tracking-wide">
+                Add Destination</div>
+            <form action="coba-modal.html">
+                <div class="modal-content text-center">
+                    <div class="input-file mb-4">
+                        <input type="file" name="" id="input-image" class="hidden">
+                        <button id="add-img"
+                            class="btn-add-img bg-green-400 px-3 py-2 rounded-lg text-white">Browse</button>
+                        <label for="add-img" class="text-xs italic text-gray-400">Size:</label>
+                    </div>
+                    <div class="input-text my-4">
+                        <p class="input-label-modal text-sm my-2 tracking-wide font-semibold">
+                            Destination Name</p>
+                        <input type="text"
+                            class="border border-green-100 bg-green-100 rounded-lg px-3 py-2 text-center w-2/3 focus:outline-none focus:bg-white focus:border-green-200">
+                    </div>
+                    <div class="input-textarea my-4">
+                        <p class="input-label-modal text-sm my-2 tracking-wide font-semibold">
+                            Destination Description</p>
+                        <textarea name="" id="" rows="3"
+                            class="border border-green-100 bg-green-100 rounded-lg px-3 py-2 w-11/12 focus:outline-none focus:bg-white focus:border-green-200 resize-none"></textarea>
+                    </div>
+                </div>
+                <div class="modal-btn flex justify-center">
+                    <button
+                        class="bg-green-400 px-3 py-2 rounded-lg text-white w-20 mx-1">Add</button>
+                    <button
+                        class="bg-red-400 px-3 py-2 rounded-lg text-white w-20 mx-1" id="cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/main.js"></script>
+
+    <!-- Modal -->
+    <script>
+        
+    </script>
+</body>
+</html>
