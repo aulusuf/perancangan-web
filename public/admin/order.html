@@ -77,6 +77,7 @@
 	<!-- /Nav -->
 
     <div class="main">
+        <!-- sidebar -->
         <div class="sidebar">
             <ul class="menu">
                 <li>
@@ -105,16 +106,16 @@
                 </li>
             </ul>
         </div>
-        <div class="content-container ml-48 w-full">
-            <div class="content-head flex justify-center bg-green-500 py-3 text-white text-2xl font-semibold">
+        <div class="content-container">
+            <div class="head">
                 <p>Order</p>
             </div>
-            <div class="content p-5 flex flex-wrap justify-center">
-                <div class="bg-white border-transparent rounded-lg shadow-lg m-5">
-                    <div class="bg-green-400 rounded-t-lg p-2">
+            <div class="content">
+                <div class="table-container">
+                    <div class="upper">
                     </div>
-                    <table id="myTable" class="text-left w-full border-collapse text-center">
-                        <thead class="order-table bg-green-400">
+                    <table id="myTable" class="table">
+                        <thead class="order-table">
                             <tr>
                                 <th>ID</th>
                                 <th>Date</th>
@@ -126,7 +127,7 @@
                                 <th>Action</th>
                             </tr>
                         </thead>
-                        <tbody class="table-data text-sm">
+                        <tbody class="table-data">
                             <tr>
                                 <td>1</td>
                                 <td>17 Agustus 200</td>
@@ -149,12 +150,10 @@
                                 <td>Bali</td>
                                 <td>30</td>
                                 <td>
-                                    <button class="text-white bg-blue-600 font-bold py-1 px-3 rounded text-xs hover:bg-blue-500">View</button>
-                                <td class="">
-                                    <a href="#"
-                                        class="text-white bg-green-600 font-bold py-1 px-3 rounded text-xs hover:bg-green-500">Accept</a>
-                                    <a href="#"
-                                        class="text-white bg-red-600 font-bold py-1 px-3 rounded text-xs hover:bg-red-500">Cancel</a>
+                                    <a href="#" class="view">View</a>
+                                <td>
+                                    <a href="#" class="accept">Accept</a>
+                                    <a href="#" class="cancel">Cancel</a>
                                 </td>
                             </tr>
                         </tbody>

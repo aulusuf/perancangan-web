@@ -6,21 +6,48 @@
 .main {
   @apply flex pt-12;
 }
-.sidebar {
+.main .sidebar {
   @apply w-48 h-screen bg-white pt-16 fixed;
 }
-.menu li a:hover{
+/* sidebar */
+.sidebar .menu li a:hover{
   @apply bg-green-500 py-3 text-white;
 }
-.menu li a{
+.sidebar .menu li a{
   @apply flex py-3 text-black;
 }
-.menu li a.active{
-  @apply text-white;
-}
-.active {
+.sidebar .menu li a.active{
   @apply bg-green-500 text-white;
 }
+/* content-container */
+.content-container{
+  @apply  ml-48 w-full;
+}
+.content-container .head{
+  @apply  flex justify-center bg-green-500 py-3 text-white text-2xl font-semibold;
+}
+.content-container .content{
+  @apply p-5 flex flex-wrap justify-center;
+}
+/* content */
+.content .table-container {
+  @apply bg-white border-transparent rounded-lg shadow-lg m-5;
+}
+/* table-container */
+.table-container .upper{
+  @apply  bg-green-400 rounded-t-lg p-2;
+}
+.table-container .table{
+  @apply text-left w-full border-collapse text-center;
+}
+/* table */
+.table thead{
+  @apply bg-green-400;
+}
+.table tbody{
+  @apply text-sm;
+}
+
 
 /* index */
 .services-section{
