@@ -39,6 +39,65 @@
   @apply px-20 text-green-oc;
 }
 
+/* navbar-main */
+.navbar-main{
+  @apply  text-black mt-10 mb-4 text-sm;
+}
+.navbar-main ul{
+  @apply flex justify-center font-medium;
+}
+.navbar-main ul li a{
+  @apply mx-4 inline;
+}
+.navbar-main ul li a.active{
+  @apply font-medium text-white bg-g-green-blue px-3 py-1 rounded-lg;
+}
+/* page-title */
+.page-title p{
+  @apply text-green-oc text-6xl text-center mt-10;
+}
+.page-title p span{
+  @apply font-bold;
+}
+.caption{
+  @apply my-4 tracking-wide text-center text-green-oc text-xl font-bold mb-10;
+}
+/* gallery */
+.gallery{
+  @apply py-10;
+}
+.gallery p{
+  @apply text-green-oc text-2xl text-center;
+}
+.gallery .image{
+  @apply flex justify-center my-4;
+}
+img.bond{
+  @apply rounded-lg;
+}
+
+/* destination-booking */
+.destination-booking{
+  @apply  py-16 text-white text-2xl text-center font-semibold;
+}
+.destination-booking a{
+  @apply bg-g-green-blue rounded-lg px-6 py-5;
+}
+
+/* other-destination */
+.other-destination p{
+  @apply text-green-oc text-xl text-center py-5;
+}
+.other-destination .destination{
+  @apply  flex justify-center font-semibold;
+}
+.other-destination .destination a{
+  @apply w-48 text-center rounded-lg text-green-oc px-3 py-2 text-xl;
+}
+.other-destination .destination a:hover{
+  @apply bg-g-green-blue text-white;
+}
+
 
 @tailwind utilities;
 
