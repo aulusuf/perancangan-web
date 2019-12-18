@@ -22,19 +22,18 @@
         <p class="font-semibold text-center my-10 text-3xl">
             LOGIN
         </p>
-        <form action="">
+        <form action="admin/order.html">
             <div class="text-center mb-4">
-                <div>E-mail</div>
-                <input class="font-hairline text-xl px-4 py-1 text-center text-green-oc border rounded"type="email" name="" id="">
-            </div>
-            <div class="text-center mb-4">
-                <div>Password</div>
-                <input class="font-hairline text-xl px-4 py-1 text-center text-green-oc border rounded"type="password" name="" id="">
-            </div>
-            <div class="text-center mb-4">
-                <a href="booking-data.html" class="font-semibold px-6 py-3 bg-green-oc text-white rounded-lg">Masuk</a>
-            </div>
+                <input id="email" class="my-3 font-hairline text-xl px-4 py-1 text-center text-green-oc border rounded" type="email" name="email" placeholder="Email">
+                <input id="password" class="my-3 font-hairline text-xl px-4 py-1 text-center text-green-oc border rounded" type="password" name="password" placeholder="Password">
+                <button type="submit" class="font-semibold px-6 py-3 bg-green-oc text-white rounded-lg">Masuk</button>
         </form>
     </div>
+    <script src="../public/js/jquery-3.4.1.js"></script>
+    <script src="../public/js/main.js"></script>
+    <script type="text/javascript">
+        $("form").validasi();
+    </script>
+
 </body>
 </html>

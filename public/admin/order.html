@@ -136,7 +136,7 @@
                                 <td>Bali</td>
                                 <td>30</td>
                                 <td>
-                                    <a href="#" class="view">View</a>
+                                    <a href="#" class="view" onclick="openModal()">View</a>
                                 <td>
                                     <a href="#" class="accept">Accept</a>
                                     <a href="#" class="cancel">Cancel</a>
@@ -150,7 +150,7 @@
                                 <td>Bali</td>
                                 <td>30</td>
                                 <td>
-                                    <a href="#" class="view">View</a>
+                                    <a href="#" class="view" onclick="openModal()">View</a>
                                 <td>
                                     <a href="#" class="accept">Accept</a>
                                     <a href="#" class="cancel">Cancel</a>
@@ -160,26 +160,77 @@
                     </table>
                 </div>
             </div>
+            <div class="more">
+                <a id="load" href="#!">View More</a>
+            </div>
         </div>
     </div>
 
     <!-- Modal View Payment -->
-    <div class="modal fixed bg-gray-580 top-0 h-screen w-screen flex items-center justify-center" style="display: none;">
-        <div class="modal-content bg-white rounded-lg p-3 w-full max-w-lg">
-            <div class="modal-title text-center text-gray-500 text-sm font-semibold pb-3">Payment</div>
-            <div class="modal-body">
+    <div id="modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="title">Payment</div>
+            <div class="body">
                 <img src="../img/service-tourguide.png" height="1000" width="1000" alt="">
             </div>
         </div>
     </div>
 
 	<script src="../js/jquery-3.4.1.js"></script>
-	<script src="../js/main.js"></script>
-
-	<!-- Modal -->
+    <!-- <script src="../js/main.js"></script> -->
+    
+    <!-- modal -->
     <script>
-        $(document).ready(function(){
-            $("#toggle-modal").modal();
+        var modal = document.getElementById('modal');
+        // function onclick
+        function openModal(){
+            $(modal).fadeIn();
+        }
+        // open modal
+        $("#toggle_modal").click(function(e){
+            e.openModal();
+        });
+        //close modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                $(modal).fadeOut();
+          }
+        }
+    </script>
+
+
+
+
+    <!-- Ajax -->
+    <script type="text/javascript">
+        $("#load").click(function () {
+            $.getJSON(
+                'https://raw.githubusercontent.com/HamadaEmpatLima/GiliParadise/hamada/Admin%20Dashboard%20%5BWIP%5D/json/order-2.json',
+                function (data) {
+                    console.log(data);
+                    $.each(data, function (n, elem) {
+                        console.log('id ' + elem['id'] + ' - date ' + elem['date'] + ' - name ' +
+                            elem['name'] + ' - destination ' + elem['destination'] +
+                            ' - departure ' + elem['departure'] + ' - person ' + elem['person'])
+                        $('.table-data').append(`
+                <tr>
+                    <td>` + elem['id'] + `</td>
+                    <td>` + elem['date'] + `</td>
+                    <td>` + elem['name'] + `</td>
+                    <td>` + elem['destination'] + `</td>
+                    <td>` + elem['departure'] + `</td>
+                    <td>` + elem['person'] + `</td>
+                    <td>
+                    <a href="#" class="view" onclick="openModal()">View</a>
+                    <td>
+                        <a href="#" class="accept">Accept</a>
+                        <a href="#" class="cancel">Cancel</a>
+                    </td>
+                </tr>
+                `);
+                });
+                $("#load").remove();
+            });
         });
     </script>
 </body>
